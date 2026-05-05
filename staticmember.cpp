@@ -2,7 +2,8 @@
 using namespace std;
 
 class Mahasiswa { //membuat class mahasiswa
-    public:
+
+public:
     static int nim; //deklarasi variabel static yaitu variabel nim
     //deklarasi variabel member
     int id;
@@ -15,6 +16,14 @@ class Mahasiswa { //membuat class mahasiswa
     //pembuatan constructor Mahasiswa dengan parameter pnama
     //member initialize list
     Mahasiswa(string pnama) : nama(pnama) {
+        setID();
     }
+};
 
+//memberi value ke variabel nim dari class mahasiswa
+int Mahasiswa::nim = 0;
+
+//mengimplementasikan prosedur - prosedur di luar class
+void Mahasiswa::setID() {
+    id = ++nim;
 };
