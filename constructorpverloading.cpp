@@ -29,3 +29,15 @@ mahasiswa :: mahasiswa(int iNim, string iNama){
     nim = iNim;
     nama = iNama; //definisi hanya NIM dan NAMA
 }
+
+void mahasiswa :: cetak(){
+
+    cout << "NIM : " << nim << endl;
+    cout << "Nama : " << nama << endl;
+}
+
+int main() {
+    mahasiswa mhs1 (102030);
+    mahasiswa mhs2("Andi");
+    mahasiswa mhs3(01203, "Santi");
+}
